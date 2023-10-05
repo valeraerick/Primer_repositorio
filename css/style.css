@@ -121,16 +121,22 @@ article {
     gap: 20px;
 }
 
+.rrss{
+    display: flex;
+    background-color: #8a2be2;
+}
+
 .pie-de-pagina img{
     align-items: center;
     background-color: #8a2be2;
     height: 40px;
     width: 45px;
-    margin-top: 5px; 
+    margin-top: 5px;
+    padding: 2px 8px; 
 }
 
 footer{
     height: 75px;
+    text-align: center;
     background-color: #8a2be2;
-
 }
