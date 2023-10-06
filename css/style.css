@@ -87,11 +87,10 @@ nav a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 50px;
+    padding-top: 20px;
+    border-radius: 40px;
     width: 80%;
     height: 70%;
-    box-shadow: 0px opx 30px #c694f5;
-
 }
 
 
