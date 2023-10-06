@@ -81,6 +81,20 @@ nav a:hover {
     display:block;
 }
 
+/* ----------------------------------------------- */
+
+.Imagen_completa{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    width: 80%;
+    height: 70%;
+    box-shadow: 0px opx 30px #c694f5;
+
+}
+
+
 section > img{
     display: block;
     width: 100%;
