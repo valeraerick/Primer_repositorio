@@ -5,6 +5,18 @@
     font-family: Arial, Helvetica, sans-serif;
     background-color: #000000;
     color: #ffffff;
+    
+}
+
+/* --Elimina las flechas de los input numericos */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+               -webkit-appearance: none;
+                margin: 0;
+} 
+input[type=number] {
+    -moz-appearance: textfield;
 }
 
 header{
@@ -15,6 +27,8 @@ header{
     align-items: center;
     padding: 10px;
 }
+
+/* --Logo dentro del nav-- */
 
 .logo{
     display: flex;
@@ -32,15 +46,14 @@ header h2{
     background-color: #8a2be2;
 }
 
-/* Menu de navegación */
+/* --Menu-- */
 
-.menu ul{
+.nav .menu{
     list-style: none;
 }
 
-.menu ul a{
+.nav .menu a{
     display:block;
-    color:#ffffff;
     text-decoration:none;
     font-weight:400;
     font-size:15px;
@@ -50,18 +63,18 @@ header h2{
     background-color: #8a2be2;
 }
 
-.menu ul li{
+.nav .menu li{
     position:relative;
     float:left;
     margin:0;
     padding:0;
 }
 
-nav a:hover {
+.nav a:hover {
     background:#c694f5;
 }
 
-.menu ul ul {
+.nav .menu .submenu {
     display:none;
     position:absolute;
     top:100%;
@@ -70,20 +83,21 @@ nav a:hover {
     padding:0;
    }
    
-/* menu desplegable */
+/* --submenu-- */
    
-.menu ul ul li {
+.nav .menu .submenu li {
     float:none;
-    width:auto
+    width:auto;
+    list-style: none;
 }  
 
-.menu ul li:hover > ul {
+.nav .menu li:hover > .submenu {
     display:block;
 }
 
 /* ----------------------------------------------- */
 
-.Imagen_completa{
+.imagen-principal{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -115,32 +129,30 @@ article {
     text-shadow: 1px 1px 1px #8f8a8a;
 }
 
-.contenedor-FullSize{
+.section-principal{
     width: 90%;
     max-width: 1200px;
     margin: auto;
     padding: 40px 0;
-    /* display: grid;
-    grid-template-columns: 50% 50%; */
 }
 
 .contenedor{
     width: 95%;
     max-width: 1200px;
-    margin: auto;
+    margin: 1em auto;
     padding: 40px 0;
     display: grid; 
     grid-template-columns: 50% 50%;
-    gap: 20px;
+    gap: 1rem;
 }
 
-
-.rrss{
-    display: flex;
+.footer{
+    height: 75px;
+    text-align: center;
     background-color: #8a2be2;
 }
 
-.pie-de-pagina img{
+.footer img{
     align-items: center;
     background-color: #8a2be2;
     height: 40px;
@@ -149,8 +161,111 @@ article {
     padding: 2px 8px; 
 }
 
-footer{
-    height: 75px;
-    text-align: center;
-    background-color: #8a2be2;
+/* --Formulario de contacto-- */
+
+#contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: url(../Imagenes/fondo.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }
+
+.contenedor-contacto{
+    position: relative;
+    width: 400px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contenedor-contacto h2{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.input-group{
+    position: relative;
+    margin: 30px 0;
+    width: 300px;
+    border-bottom: 2px solid #ffffff;
+}
+
+.input-group label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #ffffff;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .6s;
+    font-weight: bold;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+}
+
+.input-group input{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: -35px 0 5px;
+    color: #ffffff;
+}
+
+.input-group i{
+    position: absolute;
+    color: #ffffff;
+    font-size: 1.6rem;
+    top: 19px;
+    right: 8px;
+
+}
+
+button{
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+    border-radius: 40px;
+    background: #8a2be2;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    font-size: 1rem;
+    transition: .4s;
+}
+
+button:hover{
+    opacity: .9;
+}
+
+@media(max-width:412px){
+    #contacto{
+        width: 100%;
+    }
+}
+
+@media(max-width:320px){
+    #contacto{
+        width: 100%;
+        background: none;
+    }
+}
+
+/* --fin formulario contacto */
