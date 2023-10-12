@@ -44,13 +44,22 @@ body{
 
 /* ----------------------------------------------- */
 
+.carousel-item img{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    border-radius: 40px;
+    width: 70%;
+    height: 400px;
+}
+
 .imagen-principal{
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-top: 20px;
     border-radius: 40px;
-    width: 70%;
+    width: 52%;
     height: 400px;
 }
 
