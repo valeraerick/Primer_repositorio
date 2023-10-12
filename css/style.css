@@ -50,6 +50,9 @@ header h2{
 
 .nav .menu{
     list-style: none;
+    display: flex;
+    background-color: #8a2be2;
+    padding-right: 0;
 }
 
 .nav .menu a{
@@ -255,17 +258,34 @@ button:hover{
     opacity: .9;
 }
 
+/* --fin formulario contacto */
+
+/* diseño responsive */
+
 @media(max-width:412px){
     #contacto{
         width: 100%;
+    }
+    .contenedor{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .imagen-principal{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+        border-radius: 30px;
+        width: 70%;
+        height: 200px;
     }
 }
 
 @media(max-width:320px){
     #contacto{
         width: 100%;
+        padding: 0 5px;
         background: none;
     }
 }
 
-/* --fin formulario contacto */
