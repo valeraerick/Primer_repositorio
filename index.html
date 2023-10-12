@@ -1,94 +1,189 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IT-Arg</title>
-    <link rel="shortcut icon" type="image/x-icon" href="Imagenes/Favicon.ico">
-    <link rel="stylesheet" href="./css/style.css">     
-</head>
-<body>
+    <link rel="shortcut icon" type="image/x-icon" href="Imagenes/Favicon.ico" />
+    <!-- --Inicio Link a componenestes de Bootstrap-- -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- --FIn Link a componenestes de Bootstrap-- -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <header>
-        <a class="logo ">
-            <img src="./Imagenes/Logo.png" alt="Logo IT-Arg">
-            <h2 class="nombre-empresa"> IT-Arg </h2>
-        </a>
-        <!-- --Inicio menu-- -->
-        <nav class="nav">            
-            <ul class="menu">
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a>Cursos</a>
-                        <!--inicio submenu-- -->
-                        <ul class="submenu">
-                            <li><a href="./Paginas/arc.html">Armado y Reparación Computadoras</a></li>
-                            <li><a href="./Paginas/admri.html">Administración de Redes Informaticas</a></li>
-                            <li><a href="./Paginas/admli.html">Administración Linux</a></li>
-                            <li><a href="./Paginas/espsi.html">Especialización en Seguridad Informatica</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Vision</a></li>
-                    <li><a href="./Paginas/contacto.html">Contacto</a></li>
+      <!-- Fin NAV Bootstrap -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="./Imagenes/Logo.png"
+              alt="Logo IT-Arg"
+              width="50"
+              height="30"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Cursos
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./Paginas/arc.html"
+                      >Armado y Reparación de Computadoras</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./Paginas/admri.html"
+                      >Administración de Redes Informaticas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./Paginas/admli.html"
+                      >Administración Linux</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./Paginas/espsi.html"
+                      >Especialización en Seguridad Informatica</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Vision</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Paginas/contacto.html">Contacto</a>
+              </li>
             </ul>
-        </nav>
-        <!-- Final Menu -->
-    </header>
-    <img src="./Imagenes/Portada.jpg" alt="saber es poder" class="imagen-principal">
+          </div>
+        </div>
+      </nav>
 
-        <section class="section-principal">
-            <img src="./Imagenes/Circuito2.png" alt="Circuito">
-            <h2>Entrevista Inicial</h2>
-            <article>
-                El primer paso para el ingreso a la comunidad de IT-arg está dado por una entrevista personalizada con la dirección del Instituto a la que cada aspirante accede, durante la misma se lo interioriza sobre la filosofía, los objetivos, encuadre y forma de trabajo institucional. El interesado plantea sus objetivos, evacúa sus dudas y en base a la propuesta se le presenta la oferta de cursos disponibles acorde a su nivel e intereses.
-            </article>        
-            <h2>Planes de Estudio</h2>
-            <article>
-                Cada plan de estudios ha sido desarrollado por IT-arg con el objetivo de capacitar a los alumnos en el desarrollo de roles y/o tareas especificas. Para ello se evalúan las habilidades requeridas, los conocimientos previos por parte del alumno que serán necesarios para acceder a dicha capacitación. Luego se les listan las “Unidades Temáticas”, se ponderan y ordenan de acuerdo a varios criterios, para finalmente incluirlas en la curricular.
-                <br>
-                Los Planes de Estudio son construidos previendo las particularidades de cada grupo, de esta forma los docentes cuentan con la flexibilidad suficiente que les permitirá adecuar la profundidad con la que cada “Unidad Temática” será abordada de acuerdo a las particularidades de cada grupo.
-            </article>
-            <img src="./Imagenes/Circuito1.png" alt="Circuito"> 
-        </section>
+      <!-- Fin NAV Bootstrap -->
+    </header>
+    <img
+      src="./Imagenes/Portada.jpg"
+      alt="saber es poder"
+      class="imagen-principal"
+    />
+
+    <section class="section-principal">
+      <img src="./Imagenes/Circuito2.png" alt="Circuito" />
+      <h2>Entrevista Inicial</h2>
+      <article>
+        El primer paso para el ingreso a la comunidad de IT-arg está dado por
+        una entrevista personalizada con la dirección del Instituto a la que
+        cada aspirante accede, durante la misma se lo interioriza sobre la
+        filosofía, los objetivos, encuadre y forma de trabajo institucional. El
+        interesado plantea sus objetivos, evacúa sus dudas y en base a la
+        propuesta se le presenta la oferta de cursos disponibles acorde a su
+        nivel e intereses.
+      </article>
+      <h2>Planes de Estudio</h2>
+      <article>
+        Cada plan de estudios ha sido desarrollado por IT-arg con el objetivo de
+        capacitar a los alumnos en el desarrollo de roles y/o tareas
+        especificas. Para ello se evalúan las habilidades requeridas, los
+        conocimientos previos por parte del alumno que serán necesarios para
+        acceder a dicha capacitación. Luego se les listan las “Unidades
+        Temáticas”, se ponderan y ordenan de acuerdo a varios criterios, para
+        finalmente incluirlas en la curricular.
+        <br />
+        Los Planes de Estudio son construidos previendo las particularidades de
+        cada grupo, de esta forma los docentes cuentan con la flexibilidad
+        suficiente que les permitirá adecuar la profundidad con la que cada
+        “Unidad Temática” será abordada de acuerdo a las particularidades de
+        cada grupo.
+      </article>
+      <img src="./Imagenes/Circuito1.png" alt="Circuito" />
+    </section>
 
     <section class="contenedor">
-            <section>
-                <img src="./Imagenes/Circuito2.png" alt="Circuito">
-                <h2>Las Clases</h2>
-                <article>
-                    Todas nuestras clases son por la plataforma ZOOM en vivo y participativas, no son clases grabadas y se requiere tener la aplicación, conexión a internet y la cámara prendida durante todo el proceso. La frecuencia es una clase semanal con promedio de hora y media.
-                </article>
-                <img src="./Imagenes/Circuito1.png" alt="Circuito">
-                <img src="./Imagenes/Circuito2.png" alt="Circuito">
-                <h2>Dinámica</h2>
-                <article>
-                    El alumno estudia el material didáctico previo a la clase.
-                    <br>
-                    En la clase se realiza el abordaje de la unidad temática especifica mediante diversas técnicas pedagógicas y de dinámica grupal.
-                    <br>
-                    Al finalizar los alumnos cuentan con los materiales (Videos, Guías, Herramientas, etc.) que le permiten replicar las “Demostraciones Didácticas” y “Prácticas Programas”.
-                </article>
-                <img src="./Imagenes/Circuito1.png" alt="Circuito">
-            </section>
-            <section>
-            <img src="./Imagenes/Circuito2.png" alt="Circuito">
-            <h2>Evaluacón</h2>
-            <article>
-                En IT-arg la evaluación es parte del proceso de aprendizaje. La conformación de grupos pequeños y el seguiento clase a clase de cada alumno, grupo y docente nos permiten el diagnostico temprano y la adecuación de técnicas y estrategias a cada situación.
-            </article>
-            <img src="./Imagenes/Circuito1.png" alt="Circuito">
-            <img src="./Imagenes/Circuito2.png" alt="Circuito">
-            <h2>Certificación</h2>
-            <article>
-                Cada alumno recibe su certificado al finalizar la cursada y/o módulo tras cumplir con los requerimientos específicos. Los Certificados son enviado en formato digital y quedan publicados en nuestra Web para que los mismos puedan ser validados. A su vez contamos con un mecanismo automatizado para que todas las ertificaciones emitidas por IT-arg puedan ser vinculadas a LinkedIn
-            </article>
-            <img src="./Imagenes/Circuito1.png" alt="Circuito">
-            </section>
+      <section>
+        <img src="./Imagenes/Circuito2.png" alt="Circuito" />
+        <h2>Las Clases</h2>
+        <article>
+          Todas nuestras clases son por la plataforma ZOOM en vivo y
+          participativas, no son clases grabadas y se requiere tener la
+          aplicación, conexión a internet y la cámara prendida durante todo el
+          proceso. La frecuencia es una clase semanal con promedio de hora y
+          media.
+        </article>
+        <img src="./Imagenes/Circuito1.png" alt="Circuito" />
+        <img src="./Imagenes/Circuito2.png" alt="Circuito" />
+        <h2>Dinámica</h2>
+        <article>
+          El alumno estudia el material didáctico previo a la clase.
+          <br />
+          En la clase se realiza el abordaje de la unidad temática especifica
+          mediante diversas técnicas pedagógicas y de dinámica grupal.
+          <br />
+          Al finalizar los alumnos cuentan con los materiales (Videos, Guías,
+          Herramientas, etc.) que le permiten replicar las “Demostraciones
+          Didácticas” y “Prácticas Programas”.
+        </article>
+        <img src="./Imagenes/Circuito1.png" alt="Circuito" />
+      </section>
+      <section>
+        <img src="./Imagenes/Circuito2.png" alt="Circuito" />
+        <h2>Evaluacón</h2>
+        <article>
+          En IT-arg la evaluación es parte del proceso de aprendizaje. La
+          conformación de grupos pequeños y el seguiento clase a clase de cada
+          alumno, grupo y docente nos permiten el diagnostico temprano y la
+          adecuación de técnicas y estrategias a cada situación.
+        </article>
+        <img src="./Imagenes/Circuito1.png" alt="Circuito" />
+        <img src="./Imagenes/Circuito2.png" alt="Circuito" />
+        <h2>Certificación</h2>
+        <article>
+          Cada alumno recibe su certificado al finalizar la cursada y/o módulo
+          tras cumplir con los requerimientos específicos. Los Certificados son
+          enviado en formato digital y quedan publicados en nuestra Web para que
+          los mismos puedan ser validados. A su vez contamos con un mecanismo
+          automatizado para que todas las ertificaciones emitidas por IT-arg
+          puedan ser vinculadas a LinkedIn
+        </article>
+        <img src="./Imagenes/Circuito1.png" alt="Circuito" />
+      </section>
     </section>
 
     <footer class="footer" id="final">
-            <img src="./Imagenes/Btn-Facebook.png" alt="Facebook">
-            <img src="./Imagenes/Btn-Instagram.png" alt="Instagram">
-            <img src="./Imagenes/Btn-Linkedin.png" alt="Linkedin">
-            <img src="./Imagenes/Btn-YouTube.png" alt="Youtube">
+      <img src="./Imagenes/Btn-Facebook.png" alt="Facebook" />
+      <img src="./Imagenes/Btn-Instagram.png" alt="Instagram" />
+      <img src="./Imagenes/Btn-Linkedin.png" alt="Linkedin" />
+      <img src="./Imagenes/Btn-YouTube.png" alt="Youtube" />
     </footer>
-</body>
+  </body>
 </html>
