@@ -226,7 +226,7 @@ input:valid ~ label{
 
 .popup{
     width: 400px;
-    background: #8f8a8a;
+    background: #b4b2b2;
     border-radius: 6px;
     position: absolute;
     top: 0;
@@ -234,7 +234,7 @@ input:valid ~ label{
     transform: translate(-50%, -50%) scale(0.1);
     text-align: center;
     padding: 0 30px 30px;
-    color: #333;
+    color: #333333;
     visibility: hidden;
     transition: transform 0.4s, top 0.4s;
 }
