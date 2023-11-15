@@ -7,17 +7,31 @@ document.body.classList.toggle('light');
 btnSwitch.classList.toggle('active');
 }) 
 
-//  <--popup-->
+// <-- validar fomulario -->
+function validarFormulario() {
 
-let popup= document.getElementById("popup");
+    let nombreApellido = document.getElementById("nombreApellido").value;
+    let email = document.getElementById("email").value;
+    let whatsapp = document.getElementById("whatsapp").value;
 
-function openPopup(){
-    popup.classList.add("open-popup");
+    if (nombreApellido === "" || email === "" || whatsapp === "") {
+        alert("Por favor, complete todos los campos.");
+        return false;
+    }
+
+    document.getElementById("popup").style.display = "block";
+
+    nombreApellido.value = "";
+    email.value = "";
+    whatsapp.value = "";
+   
+    return false;
 }
 
-function closePopup(){
-    popup.classList.remove("open-popup");
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
 }
+
 
 // boton Scroll Top
 const btn_scrollTop = document.getElementById("btn_scrollTop")

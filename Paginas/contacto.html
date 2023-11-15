@@ -97,62 +97,72 @@
         </nav>
   
         <!-- Fin NAV Bootstrap -->
-    <section id="contacto">
-        <div class="contenedor-contacto">
-            <div>
-                <form action="#" class="formulario" id="formulario">
-                    <h2>Te contactamos</h2>
-                                
-                    <div class="input-group">
-                        <i class="fa-solid fa-user" style="color: #f1f2f4;"></i>
-                        <input type="text" class="formularioInput" name="nombreApellido" required>
-                        <label for="nombreApellido">Nombre y Apellido</label>
-                    </div>
-
-                    <div class="input-group">                    
-                        <i class="fa-solid fa-envelope" style="color: #fcfcfc;"></i>
-                        <input type="email" required>
-                        <label for="#">Email</label>
-                    </div>
-                    
-                    <div class="input-group">
-                        <i class="fa-brands fa-whatsapp"></i> 
-                        <input type="number" required>
-                        <label for="#">Whatsapp</label>
-                    </div>                
-                    
-                    <div>
-                        <button class="btnEnviar" onclick="openPopup()">Enviar</button>
-                    </div>
-
-                </form>
-
-            </div>
-        </div>
-    </section>
-    <div class="popup" id="popup">
-      <img src="../Imagenes/tick.png">
-      <h2>Gracias!!</h2>
-      <p>Hemo recibido tus datos. Te estaremos contactando pronto.</p>
-      <button type="button" onclick="closePopup()">OK</button>
-
-    </div>
-    <footer class="footer">
-      <a title="Facebook" href="https://www.facebook.com/Instituto.IT.arg/" target="_blank"
-        ><img src="../Imagenes/Btn-Facebook.png" alt="Facebook"
-      /></a>
-      <a title="Instagram" href="https://www.instagram.com/instituto.it.arg/" target="_blank"
-        ><img src="../Imagenes/Btn-Instagram.png" alt="Instagram"
-      /></a>
-      <a
-        title="Linkedin"
-        href="https://ar.linkedin.com/company/instituto-it-arg" target="_blank"
-        ><img src="../Imagenes/Btn-Linkedin.png" alt="Linkedin"
-      /></a>
-      <a title="Youtube" href="https://www.youtube.com/c/RodrigoPabloBalsells" target="_blank"
-        ><img src="../Imagenes/Btn-YouTube.png" alt="Youtube"
-      /></a>
-    </footer>
+        <section id="contacto">
+          <div class="contenedor-contacto">
+              <div>
+                  <form action="#" class="formulario" id="formulario" onsubmit="return validarFormulario()">
+                      <h2>Te contactamos</h2>
+                                  
+                      <div class="input-group">
+                          <i class="fa-solid fa-user" style="color: #f1f2f4;"></i>
+                          <input type="text" class="formularioInput" name="nombreApellido" id="nombreApellido" required>
+                          <label for="nombreApellido">Nombre y Apellido</label>
+                      </div>
+      
+                      <div class="input-group">                    
+                          <i class="fa-solid fa-envelope" style="color: #fcfcfc;"></i>
+                          <input type="email" id="email" required>
+                          <label for="email">Email</label>
+                      </div>
+                      
+                      <div class="input-group">
+                          <i class="fa-brands fa-whatsapp"></i> 
+                          <input type="number" id="whatsapp" required>
+                          <label for="whatsapp">Whatsapp</label>
+                      </div>                
+                      
+                      <div>
+                          <button type="submit" class="btnEnviar">Enviar</button>
+                      </div>
+      
+                  </form>
+              </div>
+          </div>
+      </section>
+      
+      <div class="popup" id="popup">
+        <img src="../Imagenes/tick.png" alt="Check mark">
+        <h2>Gracias!!</h2>
+        <p>Hemos recibido tus datos. Te estaremos contactando pronto.</p>
+        <button type="button" onclick="closePopup()">OK</button>
+      </div>
+      
+      <footer class="footer" id="final">
+        <a
+          title="Facebook"
+          href="https://www.facebook.com/Instituto.IT.arg/"
+          target="_blank"
+          ><i class="fa-brands fa-facebook fa-2xl"></i
+        ></a>
+        <a
+          title="Instagram"
+          href="https://www.instagram.com/instituto.it.arg/"
+          target="_blank"
+          ><i class="fa-brands fa-instagram fa-2xl"></i
+        ></a>
+        <a
+          title="Linkedin"
+          href="https://ar.linkedin.com/company/instituto-it-arg"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin fa-2xl"></i
+        ></a>
+        <a
+          title="Youtube"
+          href="https://www.youtube.com/c/RodrigoPabloBalsells"
+          target="_blank"
+          ><i class="fa-brands fa-youtube fa-2xl"></i
+        ></a>
+      </footer>
 
     <script src="../js/script.js"></script>
   </body>
